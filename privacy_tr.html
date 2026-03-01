@@ -13,6 +13,7 @@
     ul { padding-left: 20px; }
     a { color: #006241; }
     .updated { color: #666; font-size: 14px; }
+    .summary { background: #f0f7f4; border-left: 4px solid #006241; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #333; }
     table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
     th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
     th { background: #f5f5f5; }
@@ -21,11 +22,19 @@
 <body>
 
 <h1>Gizlilik Politikasi</h1>
-<p class="updated">Son guncelleme: 26 Subat 2026</p>
+<p class="updated">Son guncelleme: 1 Mart 2026</p>
+
+<div class="summary">
+  <strong>Ozet:</strong> Yalnizca uygulama islevseligi icin gerekli verileri topluyoruz ve verilerinizi asla satmiyoruz. Bilgileriniz uzerinde tam kontrole sahipsiniz ve bunlari istediginiz zaman dogrudan uygulama icinden silebilirsiniz.
+</div>
 
 <p>One Bag ("biz", "uygulama") One Bag Travel tarafindan gelistirilen bir seyahat paketleme asistanidir. Bu politika hangi verileri topladigimizi, neden topladigimizi, nasil sakladigimizi ve haklarinizi aciklar.</p>
 
 <h2>1. Topladigimiz Veriler</h2>
+
+<div class="summary">
+  <strong>Ozet:</strong> Yalnizca paketleme listeleri, hatirlaticilar ve istege bagli bulut senkronizasyonu saglamak icin gerekli olanlari topluyoruz. Verilerin cogu cihazinizda kalir.
+</div>
 
 <table>
   <tr><th>Veri Turu</th><th>Ornekler</th><th>Amac</th><th>Saklama</th></tr>
@@ -35,19 +44,31 @@
   <tr><td>Kullanim kaliplari</td><td>Unutma skorlari, gec isaretlenen ogeler</td><td>Akilli paketleme onerileri</td><td>Cihaz (Isar) + Supabase (giris yapilmissa)</td></tr>
   <tr><td>Bildirim tercihleri</td><td>Hatirlatici zamanlama, sessiz mod</td><td>Paketleme hatirlaticlari</td><td>Yalnizca cihaz</td></tr>
   <tr><td>Cokme raporlari</td><td>Yigin izleri, cihaz modeli, isletim sistemi</td><td>Hata duzeltme ve kararlilik</td><td>Sentry (kisisel veri yok)</td></tr>
-  <tr><td>Reklam tanimlayicilari</td><td>IDFA/GAID (izinle)</td><td>Kisisellesmis reklamlar (ucretsiz katman)</td><td>Google AdMob</td></tr>
+  <tr><td>Reklam tanimlayicilari</td><td>IDFA (iOS) / GAID (Android), izinle</td><td>Kisisellesmis reklamlar (ucretsiz katman)</td><td>Google AdMob</td></tr>
 </table>
 
 <h2>2. Verilerinizi Nasil Kullaniriz</h2>
+
+<div class="summary">
+  <strong>Ozet:</strong> Verileriniz yalnizca uygulama ozelliklerini saglamak icin kullanilir. Kisisel verilerinizi ucuncu taraflara satmiyoruz, kiralamiyoruz veya takas etmiyoruz.
+</div>
+
 <ul>
   <li><strong>Temel islevler:</strong> Paketleme listeleri olusturma, ilerleme takibi, belge yonetimi, hatirlatici gonderme</li>
   <li><strong>Kisisellestirme:</strong> Hangi ogeleri unutma egiliminde oldugunuzu ogrenme (Unutma Skoru)</li>
   <li><strong>Bulut senkronizasyon:</strong> Seyahatlerinizi cihazlar arasinda yedekleme ve senkronize etme (istege bagli)</li>
   <li><strong>Cokme raporlama:</strong> Hatalari tespit edip duzeltme</li>
-  <li><strong>Reklamcilik:</strong> Ucretsiz katman kullanicilarına reklam gosterme (premium aboneler icin kaldirilir)</li>
+  <li><strong>Reklamcilik:</strong> Ucretsiz katman kullanicilarina reklam gosterme (premium aboneler icin kaldirilir)</li>
 </ul>
 
+<p><strong>Kisisel verilerinizi ucuncu taraflara satmiyoruz, kiralamiyoruz veya takas etmiyoruz.</strong></p>
+
 <h2>3. Veri Saklama ve Guvenlik</h2>
+
+<div class="summary">
+  <strong>Ozet:</strong> Veriler varsayilan olarak cihazinizda yerel olarak saklanir. Bulut senkronizasyonu istege baglidir ve sifreleme ile satir duzeyi guvenlik ile korunur.
+</div>
+
 <h3>Yerel Depolama (Varsayilan)</h3>
 <p>Tum veriler cihazinizda Isar yerel veritabaninda saklanir. Uygulama internet baglantisi veya kullanici hesabi olmadan tam islevseldir.</p>
 
@@ -64,6 +85,11 @@
 <p>Kasada saklanan belgeler cihazinizda kalir. Bulut sunucularina yuklenmez. Istege bagli biyometrik kilit (Face ID / parmak izi) ek bir koruma katmani saglar.</p>
 
 <h2>4. Ucuncu Taraf Hizmetleri</h2>
+
+<div class="summary">
+  <strong>Ozet:</strong> Kimlik dogrulama, cokme raporlama, reklamlar ve abonelik yonetimi icin sinirli sayida ucuncu taraf hizmeti kullaniyoruz. Her birinin kendi gizlilik politikasi vardir.
+</div>
+
 <table>
   <tr><th>Hizmet</th><th>Amac</th><th>Paylasilan Veri</th><th>Gizlilik Politikasi</th></tr>
   <tr><td>Supabase</td><td>Kimlik dogrulama, bulut senk</td><td>E-posta, seyahat verileri</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
@@ -73,16 +99,42 @@
 </table>
 
 <h2>5. Unutma Skoru Ogrenme</h2>
+
+<div class="summary">
+  <strong>Ozet:</strong> Uygulama, daha iyi oneriler sunmak icin hangi ogeleri unutma egiliminde oldugunuzu ogrenir. Bu istege baglidir ve istediginiz zaman devre disi birakilabilir.
+</div>
+
 <p>Unutma Skoru ozelligi, kalkis yakindayken gec paketlediginiz veya isaretlemeden biraktiginiz ogeleri takip eder. Bu veriler varsayilan olarak tamamen cihazinizda islenir. Bulut senkronizasyonunu etkinlestirirseniz, unutma skorlari yalnizca kendi hesabinizla senkronize edilir. Bu ozelligi istediginiz zaman Ayarlar &gt; "Paketleme aliskanliklarimdan ogren" seceneginden devre disi birakabilirsiniz.</p>
 
 <h2>6. Reklamcilik ve Izleme</h2>
-<p>Ucretsiz katman kullanicilari Google AdMob tarafindan sunulan banner reklamlar gorur. iOS'ta reklam kisisellestirmesi oncesinde Uygulama Izleme Saydamligi (ATT) izni talep ederiz. Reddederseniz kisisellesmemis reklamlar gosterilir. Premium aboneler reklam gormez.</p>
+
+<div class="summary">
+  <strong>Ozet:</strong> Ucretsiz katman kullanicilari reklam gorur. Yasalarin gerektirdigi durumlarda kisisellesmis reklamcilik icin kullanici onayi aliriz. Premium aboneler reklam gormez.
+</div>
+
+<p>Ucretsiz katman kullanicilari Google AdMob tarafindan sunulan banner reklamlar gorur. Yasalarin gerektirdigi durumlarda (ornegin GDPR, CCPA) kisisellesmis reklamcilik icin kullanici onayi aliriz.</p>
+
+<p>iOS'ta reklam kisisellestirmesi oncesinde Uygulama Izleme Saydamligi (ATT) izni talep ederiz. Reddederseniz kisisellesmemis reklamlar gosterilir.</p>
+
+<p>Android'de reklam tanimlayicilari (GAID gibi) kullanici onayina tabi olarak reklam kisisellestirmesi icin kullanilabilir. Cihaz ayarlarinizdan reklam kisisellestirmesini sifirlayabilir veya devre disi birakabilirsiniz (Ayarlar &gt; Gizlilik &gt; Reklamlar).</p>
+
+<p>Premium aboneler reklam gormez ve reklamla ilgili hicbir veri toplanmaz.</p>
 
 <h2>7. Cocuklarin Gizliligi</h2>
-<p>One Bag 13 yasin altindaki cocuklara yonelik degildir. Cocuklardan bilerek kisisel bilgi toplamayiz. Bir cocugun bize veri sagladigini dusunuyorsaniz bizimle iletisime gecin, verileri silecegiz.</p>
+
+<div class="summary">
+  <strong>Ozet:</strong> Uygulamamiz 13 yasin altindaki cocuklara yonelik degildir. Onlarin verilerini bilerek toplamayiz.
+</div>
+
+<p>13 yasin altindaki cocuklardan bilerek kisisel veri toplamayiz ve hizmetlerimizi cocuklara yonelik olarak sunmayiz. One Bag yetiskin yolcular icin tasarlanmistir. Bir cocugun bize kisisel veri sagladigini dusunuyorsaniz, lutfen derhal bizimle iletisime gecin, verileri derhal silecegiz.</p>
 
 <h2>8. Haklariniz</h2>
-<p>Bulundugunuz yargi bolgesine bagli olarak asagidaki haklara sahip olabilirsiniz:</p>
+
+<div class="summary">
+  <strong>Ozet:</strong> Verilerinize istediginiz zaman erisebilir, duzeltebilir, disari aktarabilir veya silebilirsiniz. Hesap silme islemine dogrudan uygulama icinden ulasilabilir.
+</div>
+
+<p>Bulundugunuz yargi bolgesine bagli olarak (GDPR, CCPA, KVKK dahil) asagidaki haklara sahip olabilirsiniz:</p>
 <ul>
   <li><strong>Erisim:</strong> Kisisel verilerinize erisim talep etme</li>
   <li><strong>Duzeltme:</strong> Yanlis verileri duzeltme</li>
@@ -93,17 +145,23 @@
 </ul>
 
 <h3>Hesap Silme</h3>
-<p>Hesabinizi Ayarlar &gt; Hesap &gt; Hesabi Sil yolundan silebilirsiniz. Bu islem 30 gun icinde sunucularimizdaki tum verilerinizi kalici olarak siler. Yerel veriler uygulamayi kaldirarak temizlenebilir. Ayrica <a href="mailto:onebagtravelapp@gmail.com">onebagtravelapp@gmail.com</a> adresine e-posta gondererek silme talep edebilirsiniz.</p>
+<p>Hesap silme islemine disaridan iletisim gerektirmeden dogrudan uygulama icinden ulasilabilir. Ayarlar &gt; Hesap &gt; Hesabi Sil yoluna gidin. Bu islem 30 gun icinde sunucularimizdaki tum verilerinizi kalici olarak siler. Yerel veriler Ayarlar &gt; Hesap &gt; Yerel Verileri Sil secegiyle ayrica temizlenebilir veya uygulamayi kaldirarak silinebilir.</p>
+<p>Ayrica <a href="mailto:onebagtravelapp@gmail.com">onebagtravelapp@gmail.com</a> adresine e-posta gondererek silme talep edebilirsiniz.</p>
 
 <h3>Veri Silme Talep Sayfasi</h3>
 <p><a href="https://coinsayfasi.github.io/onebag-legal/data_deletion_en.html">https://coinsayfasi.github.io/onebag-legal/data_deletion_en.html</a></p>
 
 <h2>9. Veri Saklama Suresi</h2>
+
+<div class="summary">
+  <strong>Ozet:</strong> Verilerinizi yalnizca gerektigi surece saklariz. Silinen hesaplar 30 gun icinde tamamen temizlenir.
+</div>
+
 <ul>
   <li><strong>Aktif hesaplar:</strong> Hesap aktif oldugu surece veriler saklanir</li>
   <li><strong>Silinen hesaplar:</strong> Tum veriler 30 gun icinde kalici olarak silinir</li>
   <li><strong>Cokme raporlari:</strong> 90 gun saklanir, sonra otomatik temizlenir</li>
-  <li><strong>Yalnizca yerel kullnicilar:</strong> Veriler yalnizca cihazda bulunur; uygulama kaldirildiginda silinir</li>
+  <li><strong>Yalnizca yerel kullanicilar:</strong> Veriler yalnizca cihazda bulunur; uygulama kaldirildiginda silinir</li>
 </ul>
 
 <h2>10. Uluslararasi Aktarimlar</h2>

@@ -12,6 +12,7 @@
     ul, ol { padding-left: 20px; }
     a { color: #006241; }
     .updated { color: #666; font-size: 14px; }
+    .summary { background: #f0f7f4; border-left: 4px solid #006241; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #333; }
     .box { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 16px 0; }
     table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
     th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
@@ -21,11 +22,15 @@
 <body>
 
 <h1>Data Deletion Request</h1>
-<p class="updated">Last updated: February 26, 2026</p>
+<p class="updated">Last updated: March 1, 2026</p>
+
+<div class="summary">
+  <strong>Summary:</strong> Account deletion is available directly within the app without requiring external contact. All cloud data is permanently deleted within 30 days.
+</div>
 
 <p>One Bag respects your right to control your personal data. This page explains how to delete your data from our services.</p>
 
-<h2>Option 1: Delete from Within the App</h2>
+<h2>Option 1: Delete from Within the App (Recommended)</h2>
 <ol>
   <li>Open One Bag</li>
   <li>Go to <strong>Settings</strong></li>
@@ -33,7 +38,7 @@
   <li>Tap <strong>Delete Account</strong></li>
   <li>Confirm the deletion in the dialog</li>
 </ol>
-<p>This will permanently delete your account and all associated cloud data (trips, packing items, traveler data, forget scores, categories). The deletion is processed within 30 days.</p>
+<p>This will permanently delete your account and all associated cloud data (trips, packing items, traveler data, forget scores, categories). The deletion is processed within 30 days. No external contact is required.</p>
 
 <h2>Option 2: Request Deletion via Email</h2>
 <div class="box">
@@ -59,12 +64,13 @@
   <tr><td>Custom categories</td><td>Yes</td><td>User-created packing categories</td></tr>
   <tr><td>Document vault</td><td>Local only</td><td>Documents are stored on-device only; uninstall the app to remove</td></tr>
   <tr><td>Crash reports</td><td>Auto-expire</td><td>Sentry crash reports expire after 90 days; no PII included</td></tr>
-  <tr><td>Ad identifiers</td><td>Managed by Google</td><td>Reset via device settings (Settings &gt; Privacy &gt; Advertising)</td></tr>
+  <tr><td>Ad identifiers</td><td>Managed by Google/Apple</td><td>Reset via device settings (Settings &gt; Privacy &gt; Advertising)</td></tr>
 </table>
 
 <h2>Local Data</h2>
 <p>Data stored only on your device (Isar database, document vault files) is not accessible to us. To remove local data:</p>
 <ul>
+  <li><strong>In-app:</strong> Settings &gt; Account &gt; Delete Local Data</li>
   <li><strong>Clear app data:</strong> Device Settings &gt; Apps &gt; One Bag &gt; Clear Data</li>
   <li><strong>Uninstall the app:</strong> This removes all local data including vault documents</li>
 </ul>
