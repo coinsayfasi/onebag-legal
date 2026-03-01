@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Bag - Veri Silme Talebi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #2D2D2D; line-height: 1.6; }
+    h1 { color: #006241; font-size: 24px; }
+    h2 { color: #0B3B2E; font-size: 18px; margin-top: 32px; }
+    p, li { font-size: 15px; }
+    ul, ol { padding-left: 20px; }
+    a { color: #006241; }
+    .updated { color: #666; font-size: 14px; }
+    .box { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 16px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+
+<h1>Veri Silme Talebi</h1>
+<p class="updated">Son guncelleme: 26 Subat 2026</p>
+
+<p>One Bag kisisel verileriniz uzerindeki kontrol hakkiniza saygi duyar. Bu sayfa verilerinizi hizmetlerimizden nasil silebileceginizi aciklar.</p>
+
+<h2>Secenek 1: Uygulama Icinden Silme</h2>
+<ol>
+  <li>One Bag'i acin</li>
+  <li><strong>Ayarlar</strong>'a gidin</li>
+  <li><strong>Hesap</strong>'a dokunun</li>
+  <li><strong>Hesabi Sil</strong>'e dokunun</li>
+  <li>Iletisim kutusunda silme islemini onaylayin</li>
+</ol>
+<p>Bu islem hesabinizi ve iliskili tum bulut verilerini (seyahatler, paketleme ogeleri, yolcu verileri, unutma skorlari, kategoriler) kalici olarak silecektir. Silme islemi 30 gun icinde tamamlanir.</p>
+
+<h2>Secenek 2: E-posta ile Silme Talebi</h2>
+<div class="box">
+  <p><strong>E-posta gonderin:</strong> <a href="mailto:support@onebag.travel">support@onebag.travel</a></p>
+  <p><strong>Konu:</strong> Veri Silme Talebi</p>
+  <p><strong>Icerik:</strong></p>
+  <ul>
+    <li>Kayitli e-posta adresiniz</li>
+    <li>Kullanici ID'niz (Ayarlar &gt; Hesap bolumunde bulunur)</li>
+    <li>Tum verilerin silinmesini istediginize dair onay</li>
+  </ul>
+  <p>Talebinizi 30 gun icinde isleyecek ve onay e-postasi gonderecegiz.</p>
+</div>
+
+<h2>Hangi Veriler Silinir</h2>
+<table>
+  <tr><th>Veri Turu</th><th>Silinir mi</th><th>Notlar</th></tr>
+  <tr><td>Hesap profili</td><td>Evet</td><td>E-posta, kimlik dogrulama tokenlari Supabase'den kaldirilir</td></tr>
+  <tr><td>Seyahatler</td><td>Evet</td><td>Tum seyahat kayitlari ve meta verileri</td></tr>
+  <tr><td>Paketleme ogeleri</td><td>Evet</td><td>Tum seyahatlerdeki tum kontrol listesi ogeleri</td></tr>
+  <tr><td>Yolcu profilleri</td><td>Evet</td><td>Aile uyesi / yol arkadasi verileri</td></tr>
+  <tr><td>Unutma skorlari</td><td>Evet</td><td>Tum ogrenme verileri (UserStats)</td></tr>
+  <tr><td>Ozel kategoriler</td><td>Evet</td><td>Kullanici tarafindan olusturulan paketleme kategorileri</td></tr>
+  <tr><td>Belge kasasi</td><td>Yalnizca yerel</td><td>Belgeler yalnizca cihazda saklanir; kaldirmak icin uygulamayi silin</td></tr>
+  <tr><td>Cokme raporlari</td><td>Otomatik suresi dolar</td><td>Sentry cokme raporlari 90 gun sonra surer dolar; kisisel veri icermez</td></tr>
+  <tr><td>Reklam tanimlayicilari</td><td>Google yonetir</td><td>Cihaz ayarlarindan sifirlayin (Ayarlar &gt; Gizlilik &gt; Reklamcilik)</td></tr>
+</table>
+
+<h2>Yerel Veriler</h2>
+<p>Yalnizca cihazinizda saklanan veriler (Isar veritabani, belge kasasi dosyalari) bize erisilemez. Yerel verileri kaldirmak icin:</p>
+<ul>
+  <li><strong>Uygulama verilerini temizle:</strong> Cihaz Ayarlari &gt; Uygulamalar &gt; One Bag &gt; Verileri Temizle</li>
+  <li><strong>Uygulamayi kaldirin:</strong> Bu, kasa belgeleri dahil tum yerel verileri kaldirir</li>
+</ul>
+
+<h2>Abonelikler</h2>
+<p>Hesabinizi silmek aktif abonelikleri otomatik olarak iptal etmez. Lutfen aboneliginizi ayrica iptal edin:</p>
+<ul>
+  <li><strong>iOS:</strong> Ayarlar &gt; Apple ID &gt; Abonelikler &gt; One Bag &gt; Iptal Et</li>
+  <li><strong>Android:</strong> Google Play Store &gt; Abonelikler &gt; One Bag &gt; Iptal Et</li>
+</ul>
+
+<h2>Iletisim</h2>
+<p>Veri silme hakkinda sorulariniz icin:</p>
+<ul>
+  <li>E-posta: <a href="mailto:support@onebag.travel">support@onebag.travel</a></li>
+  <li>Gizlilik Politikasi: <a href="https://onebag.travel/privacy">https://onebag.travel/privacy</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Bag - Gizlilik Politikasi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px; color: #2D2D2D; line-height: 1.6; }
+    h1 { color: #006241; font-size: 24px; }
+    h2 { color: #0B3B2E; font-size: 18px; margin-top: 32px; }
+    h3 { font-size: 16px; margin-top: 24px; }
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; }
+    a { color: #006241; }
+    .updated { color: #666; font-size: 14px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+    th { background: #f5f5f5; }
+  </style>
+</head>
+<body>
+
+<h1>Gizlilik Politikasi</h1>
+<p class="updated">Son guncelleme: 26 Subat 2026</p>
+
+<p>One Bag ("biz", "uygulama") One Bag Travel tarafindan gelistirilen bir seyahat paketleme asistanidir. Bu politika hangi verileri topladigimizi, neden topladigimizi, nasil sakladigimizi ve haklarinizi aciklar.</p>
+
+<h2>1. Topladigimiz Veriler</h2>
+
+<table>
+  <tr><th>Veri Turu</th><th>Ornekler</th><th>Amac</th><th>Saklama</th></tr>
+  <tr><td>Hesap verileri</td><td>E-posta adresi, sifre hash'i</td><td>Kimlik dogrulama, hesap yonetimi</td><td>Supabase (istege bagli kayit)</td></tr>
+  <tr><td>Seyahat verileri</td><td>Varic nokta, tarihler, seyahat profili, paketleme ogeleri</td><td>Temel uygulama islevi</td><td>Cihaz (Isar) + Supabase (giris yapilmissa)</td></tr>
+  <tr><td>Belge meta verileri</td><td>Dosya adlari, son kullanma tarihleri, kucuk resimler</td><td>Belge kasasi ozelligi</td><td>Yalnizca cihaz</td></tr>
+  <tr><td>Kullanim kaliplari</td><td>Unutma skorlari, gec isaretlenen ogeler</td><td>Akilli paketleme onerileri</td><td>Cihaz (Isar) + Supabase (giris yapilmissa)</td></tr>
+  <tr><td>Bildirim tercihleri</td><td>Hatirlatici zamanlama, sessiz mod</td><td>Paketleme hatirlaticlari</td><td>Yalnizca cihaz</td></tr>
+  <tr><td>Cokme raporlari</td><td>Yigin izleri, cihaz modeli, isletim sistemi</td><td>Hata duzeltme ve kararlilik</td><td>Sentry (kisisel veri yok)</td></tr>
+  <tr><td>Reklam tanimlayicilari</td><td>IDFA/GAID (izinle)</td><td>Kisisellesmis reklamlar (ucretsiz katman)</td><td>Google AdMob</td></tr>
+</table>
+
+<h2>2. Verilerinizi Nasil Kullaniriz</h2>
+<ul>
+  <li><strong>Temel islevler:</strong> Paketleme listeleri olusturma, ilerleme takibi, belge yonetimi, hatirlatici gonderme</li>
+  <li><strong>Kisisellestirme:</strong> Hangi ogeleri unutma egiliminde oldugunuzu ogrenme (Unutma Skoru)</li>
+  <li><strong>Bulut senkronizasyon:</strong> Seyahatlerinizi cihazlar arasinda yedekleme ve senkronize etme (istege bagli)</li>
+  <li><strong>Cokme raporlama:</strong> Hatalari tespit edip duzeltme</li>
+  <li><strong>Reklamcilik:</strong> Ucretsiz katman kullanicilarına reklam gosterme (premium aboneler icin kaldirilir)</li>
+</ul>
+
+<h2>3. Veri Saklama ve Guvenlik</h2>
+<h3>Yerel Depolama (Varsayilan)</h3>
+<p>Tum veriler cihazinizda Isar yerel veritabaninda saklanir. Uygulama internet baglantisi veya kullanici hesabi olmadan tam islevseldir.</p>
+
+<h3>Bulut Depolama (Istege Bagli)</h3>
+<p>Hesap olusturup senkronizasyonu etkinlestirirseniz, seyahat verileriniz Supabase'de (AWS uzerinde) saklanir. Tum bulut verileri sunlarla korunur:</p>
+<ul>
+  <li>Yalnizca sizin verilerinize erismenizi saglayan Satir Duzeyi Guvenlik (RLS) politikalari</li>
+  <li>Aktarimda TLS sifreleme</li>
+  <li>Saklama sirasinda AES-256 sifreleme</li>
+  <li>Cevrimdisi senkronizasyon icin Son Yazan Kazanir (LWW) catisma cozumu</li>
+</ul>
+
+<h3>Belge Kasasi</h3>
+<p>Kasada saklanan belgeler cihazinizda kalir. Bulut sunucularina yuklenmez. Istege bagli biyometrik kilit (Face ID / parmak izi) ek bir koruma katmani saglar.</p>
+
+<h2>4. Ucuncu Taraf Hizmetleri</h2>
+<table>
+  <tr><th>Hizmet</th><th>Amac</th><th>Paylasilan Veri</th><th>Gizlilik Politikasi</th></tr>
+  <tr><td>Supabase</td><td>Kimlik dogrulama, bulut senk</td><td>E-posta, seyahat verileri</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+  <tr><td>Sentry</td><td>Cokme raporlama</td><td>Yigin izleri, cihaz bilgisi (kisisel veri yok)</td><td><a href="https://sentry.io/privacy/">sentry.io/privacy</a></td></tr>
+  <tr><td>Google AdMob</td><td>Reklamcilik (ucretsiz katman)</td><td>Reklam tanimlayicilari, cihaz bilgisi</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  <tr><td>RevenueCat</td><td>Abonelik yonetimi</td><td>Satin alma fisleri, kullanici ID</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+</table>
+
+<h2>5. Unutma Skoru Ogrenme</h2>
+<p>Unutma Skoru ozelligi, kalkis yakindayken gec paketlediginiz veya isaretlemeden biraktiginiz ogeleri takip eder. Bu veriler varsayilan olarak tamamen cihazinizda islenir. Bulut senkronizasyonunu etkinlestirirseniz, unutma skorlari yalnizca kendi hesabinizla senkronize edilir. Bu ozelligi istediginiz zaman Ayarlar &gt; "Paketleme aliskanliklarimdan ogren" seceneginden devre disi birakabilirsiniz.</p>
+
+<h2>6. Reklamcilik ve Izleme</h2>
+<p>Ucretsiz katman kullanicilari Google AdMob tarafindan sunulan banner reklamlar gorur. iOS'ta reklam kisisellestirmesi oncesinde Uygulama Izleme Saydamligi (ATT) izni talep ederiz. Reddederseniz kisisellesmemis reklamlar gosterilir. Premium aboneler reklam gormez.</p>
+
+<h2>7. Cocuklarin Gizliligi</h2>
+<p>One Bag 13 yasin altindaki cocuklara yonelik degildir. Cocuklardan bilerek kisisel bilgi toplamayiz. Bir cocugun bize veri sagladigini dusunuyorsaniz bizimle iletisime gecin, verileri silecegiz.</p>
+
+<h2>8. Haklariniz</h2>
+<p>Bulundugunuz yargi bolgesine bagli olarak asagidaki haklara sahip olabilirsiniz:</p>
+<ul>
+  <li><strong>Erisim:</strong> Kisisel verilerinize erisim talep etme</li>
+  <li><strong>Duzeltme:</strong> Yanlis verileri duzeltme</li>
+  <li><strong>Silme:</strong> Hesabinizi ve tum iliskili verileri silme</li>
+  <li><strong>Tasima:</strong> Verilerinizi tasinabilir formatta alma</li>
+  <li><strong>Onay geri cekme:</strong> Istege bagli islemler icin onayi geri cekme (reklamlar, senk, unutma skoru)</li>
+  <li><strong>Itiraz:</strong> Belirli amaclar icin islemeye itiraz etme</li>
+</ul>
+
+<h3>Hesap Silme</h3>
+<p>Hesabinizi Ayarlar &gt; Hesap &gt; Hesabi Sil yolundan silebilirsiniz. Bu islem 30 gun icinde sunucularimizdaki tum verilerinizi kalici olarak siler. Yerel veriler uygulamayi kaldirarak temizlenebilir. Ayrica <a href="mailto:support@onebag.travel">support@onebag.travel</a> adresine e-posta gondererek silme talep edebilirsiniz.</p>
+
+<h3>Veri Silme Talep Sayfasi</h3>
+<p><a href="https://onebag.travel/data-deletion">https://onebag.travel/data-deletion</a></p>
+
+<h2>9. Veri Saklama Suresi</h2>
+<ul>
+  <li><strong>Aktif hesaplar:</strong> Hesap aktif oldugu surece veriler saklanir</li>
+  <li><strong>Silinen hesaplar:</strong> Tum veriler 30 gun icinde kalici olarak silinir</li>
+  <li><strong>Cokme raporlari:</strong> 90 gun saklanir, sonra otomatik temizlenir</li>
+  <li><strong>Yalnizca yerel kullnicilar:</strong> Veriler yalnizca cihazda bulunur; uygulama kaldirildiginda silinir</li>
+</ul>
+
+<h2>10. Uluslararasi Aktarimlar</h2>
+<p>Bulut senkronizasyonu kullaniyorsaniz verileriniz Amerika Birlesik Devletleri'nde (Supabase tarafindan kullanilan AWS altyapisi) islenebilir. AB/AEA veri aktarimlari icin standart sozlesme maddelerine dayaniyoruz.</p>
+
+<h2>11. Bu Politikadaki Degisiklikler</h2>
+<p>Bu politikayi zaman zaman guncelleyebiliriz. Onemli degisiklikler uygulama ici bildirim ile iletilecektir. Ustteki "Son guncelleme" tarihi en son revizyonu yansitir.</p>
+
+<h2>12. Iletisim</h2>
+<p>Gizlilik sorulari veya veri talepleri icin:</p>
+<ul>
+  <li>E-posta: <a href="mailto:support@onebag.travel">support@onebag.travel</a></li>
+  <li>Web: <a href="https://onebag.travel/privacy">https://onebag.travel/privacy</a></li>
+</ul>
+
+</body>
+</html>
